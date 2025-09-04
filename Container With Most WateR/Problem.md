@@ -1,24 +1,28 @@
-A celebrity is a person who is known to all but does not know anyone at a party. A party is being organized by some people. A square matrix mat[][] of size n*n is used to represent people at the party such that if an element of row i and column j is set to 1 it means ith person knows jth person. You need to return the index of the celebrity in the party, if the celebrity does not exist, return -1.
+Given an array arr[] of non-negative integers, where each element arr[i] represents the height of the vertical lines, find the maximum amount of water that can be contained between any two lines, together with the x-axis.
 
-Note: Follow 0-based indexing.
+Note: In the case of a single vertical line it will not be able to hold water.
+
+
 
 Examples:
 
-Input: mat[][] = [[1, 1, 0],
-                [0, 1, 0],
-                [0, 1, 1]]
-                
-Output: 1
+Input: arr[] = [1, 5, 4, 3]
 
-Explanation: 0th and 2nd person both know 1st person and 1st person does not know anyone. Therefore, 1 is the celebrity person.
+Output: 6
+
+Explanation: 5 and 3 are 2 distance apart. So the size of the base is 2. Height of container = min(5, 3) = 3. So, total area to hold water = 3 * 2 = 6.
 
 
 
-Input: mat[][] = [[1, 1], 
-                [1, 1]]
-                
-Output: -1
+Input: arr[] = [3, 1, 2, 4, 5]
 
-Explanation: Since both the people at the party know each other. Hence none of them is a celebrity person.
-Input: mat[][] = [[1]]
-Output: 0
+Output: 12
+
+Explanation: 5 and 3 are 4 distance apart. So the size of the base is 4. Height of container = min(5, 3) = 3. So, total area to hold water = 4 * 3 = 12.
+
+
+Input: arr[] = [2, 1, 8, 6, 4, 6, 5, 5]
+
+Output: 25 
+
+Explanation: 8 and 5 are 5 distance apart. So the size of the base is 5. Height of container = min(8, 5) = 5. So, the total area to hold water = 5 * 5 = 25.
