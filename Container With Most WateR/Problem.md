@@ -7,11 +7,18 @@ Examples:
 Input: mat[][] = [[1, 1, 0],
                 [0, 1, 0],
                 [0, 1, 1]]
+                
 Output: 1
+
 Explanation: 0th and 2nd person both know 1st person and 1st person does not know anyone. Therefore, 1 is the celebrity person.
+
+
+
 Input: mat[][] = [[1, 1], 
                 [1, 1]]
+                
 Output: -1
+
 Explanation: Since both the people at the party know each other. Hence none of them is a celebrity person.
 Input: mat[][] = [[1]]
 Output: 0
